@@ -3,22 +3,39 @@ import './App.css';
 
 
 function App() {
+
+  const header = 
+    <div>
+      <h1>
+        Hello Reujoy!
+      </h1>
+    </div>
+  const user = {
+    firstname: 'Ekow',
+    lastname: 'Amissah'
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Hello Reujoy!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vine's Care Preparatory School
-        </a>
-      </header>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <p>
+    //       Hello Reujoy!
+    //     </p>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Vine's Care Preparatory School
+    //     </a>
+    //   </header>
+    // </div>
+
+    <div className='container'>
+      {header}
+      {user.firstname + ' ' + user.lastname}
     </div>
   );
 }
