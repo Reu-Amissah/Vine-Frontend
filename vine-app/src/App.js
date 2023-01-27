@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import LandingPage from './components/Landing Page/LandingPage';
 
 
 function App() {
@@ -33,10 +34,12 @@ function App() {
     //   </header>
     // </div>
 
-    <div className='container'>
-      {header}
-      {user.firstname + ' ' + user.lastname}
-    </div>
+    <LandingPage>
+    </LandingPage>
+    // <div className='container'>
+    //   {header}
+    //   {user.firstname + ' ' + user.lastname}
+    // </div>
   );
 }
 
