@@ -1,18 +1,12 @@
 import React from "react";
 import './LandingPage.css'
+import Navbar from "../Navbar/Navbar";
 
 function LandingPage() {
   return (
     <div>
       <header>
-        <nav>
-          <ul>
-            <li><a href="#about">Home</a></li>
-            <li><a href="#services">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#contact">Enrolment</a></li>
-          </ul>
-        </nav>
+        <Navbar></Navbar>
       </header>
       <main>
         <section id="about">
