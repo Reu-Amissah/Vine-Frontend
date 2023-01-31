@@ -1,12 +1,15 @@
 nav {
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 
 .nav-container {
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    padding-inline: 10px;
+    padding-block: 20px;
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 ul {
@@ -14,4 +17,38 @@ ul {
     padding: 0;
     list-style: none;
     display: flex;
+    justify-content: space-between;
+}
+
+/* li {
+    margin-inline: 20px;
+} */
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+{/*---acitve NavBar link---*/}
+a:link#active {
+    color: #00227A;
+    font-weight: 700;
+    margin-left: 0;
+}
+
+
+div.active-link {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    background-color: #00227A;
+    width: 50%;
+    height: 4px;
 }

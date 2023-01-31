@@ -9,7 +9,10 @@ const Navbar = () => {
           Logo
         </div>
         <ul className='link-items'>
-          <li><a href="#about">Home</a></li>
+          <div className='active-link'>
+            <li><a href="#about" id='active'>Home</a></li>
+            <span></span>
+          </div>
           <li><a href="#services">About Us</a></li>
           <li><a href="#contact">Contact Us</a></li>
           <li><a href="#contact">Enrolment</a></li>
