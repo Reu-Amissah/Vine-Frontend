@@ -13,9 +13,9 @@ const Navbar = () => {
             <li><a href="#about" id='active'>Home</a></li>
             <span></span>
           </div>
-          <li><a href="#services">About Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="#contact">Enrolment</a></li>
+          <li className='not-active'><a href="#services" >About Us</a></li>
+          <li className='not-active'><a href="#contact">Contact Us</a></li>
+          <li className='not-active'><a href="#contact">Enrolment</a></li>
         </ul>
         <div className='buttons'>
           Buttons

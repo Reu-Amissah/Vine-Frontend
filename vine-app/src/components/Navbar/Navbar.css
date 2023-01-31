@@ -20,21 +20,28 @@ ul {
     justify-content: space-between;
 }
 
-/* li {
+li.not-active {
     margin-inline: 20px;
-} */
+}
 
 a {
     text-decoration: none;
 }
 
 a:link {
-    color: black;
+    color: #808080;
     font-weight: 600;
     font-size: 14px;
 }
 
-/*---acitve NavBar link---*/
+a:hover {
+    color: black;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+}
+
+/*---acitve NavBar link style---*/
 a:link#active {
     color: #00227A;
     font-weight: 700;
@@ -45,10 +52,14 @@ a:link#active {
 div.active-link {
     display: flex;
     flex-direction: column;
+    padding-inline: 20px;
+    
 }
 
 span {
     background-color: #00227A;
     width: 50%;
     height: 4px;
+    border-radius: 5px;
+    margin-top: 3px;
 }
