@@ -34,7 +34,7 @@ a:link {
     font-size: 14px;
 }
 
-{/*---acitve NavBar link---*/}
+/*---acitve NavBar link---*/
 a:link#active {
     color: #00227A;
     font-weight: 700;
