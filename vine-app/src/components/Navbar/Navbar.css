@@ -34,6 +34,10 @@ a:link {
     font-size: 14px;
 }
 
+a:visited {
+    color: gray;
+}
+
 a:hover {
     color: black;
     transition-duration: 0.1s;
