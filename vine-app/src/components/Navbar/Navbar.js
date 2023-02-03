@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../Buttons/Button'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -6,7 +7,7 @@ const Navbar = () => {
     <nav>
       <div className='nav-container'>
         <div className='logo'>
-          Logo
+          Vine's
         </div>
         <ul className='link-items'>
           <div className='active-link'>
@@ -18,7 +19,7 @@ const Navbar = () => {
           <li className='not-active'><a href="#contact">Enrolment</a></li>
         </ul>
         <div className='buttons'>
-          Buttons
+          <Button></Button> 
         </div>
       </div>
       
