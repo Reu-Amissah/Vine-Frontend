@@ -19,7 +19,7 @@ const Navbar = () => {
           <li className='not-active'><a href="#contact">Enrolment</a></li>
         </ul>
         <div className='buttons'>
-          <Button></Button> 
+          <Button title = {"Apply Now"}></Button> 
         </div>
       </div>
       

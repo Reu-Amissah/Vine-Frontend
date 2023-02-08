@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({title}) => {
   return (
-    <div>Buttons</div>
+    <div style={buttonStyles}>{title}</div>
   )
+}
+
+const buttonStyles = {
+  fontSize: "14px"
 }
 
 export default Button
