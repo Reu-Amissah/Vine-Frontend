@@ -28,6 +28,7 @@ const Navbar = () => {
         </ul>
         <div className="buttons">
           <Button title={"Apply Now"} cName={"primary-button"}></Button>
+          <Button title={"Donate"} cName={"secondary-button"}></Button>
         </div>
       </div>
     </nav>
