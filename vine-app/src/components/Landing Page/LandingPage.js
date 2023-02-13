@@ -1,6 +1,7 @@
 import React from "react";
-import './LandingPage.css'
+import "./LandingPage.css";
 import Navbar from "../Navbar/Navbar";
+import Welcome from "../Welcome/Welcome";
 
 function LandingPage() {
   return (
@@ -8,10 +9,17 @@ function LandingPage() {
       <header>
         <Navbar></Navbar>
       </header>
+      <section>
+        <Welcome></Welcome>
+      </section>
       <main>
         <section id="about">
           <h1>About Us</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id ullamcorper malesuada, urna orci commodo orci, id feugiat risus tellus id magna.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor,
+            magna id ullamcorper malesuada, urna orci commodo orci, id feugiat
+            risus tellus id magna.
+          </p>
         </section>
         <section id="services">
           <h1>Our Services</h1>
