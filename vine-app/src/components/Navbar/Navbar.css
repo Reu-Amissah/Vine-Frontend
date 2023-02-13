@@ -6,7 +6,7 @@ nav {
 .nav-container {
   width: 100%;
   padding-inline: 10px;
-  padding-block: 20px;
+  padding-block: 10px;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;

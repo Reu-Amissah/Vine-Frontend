@@ -4,7 +4,7 @@
 .primary-button {
   background-color: #00227a;
   color: white;
-  padding: 10px 12px;
+  padding: 10px 10px;
   border-radius: 5px;
   margin: 0 10px;
   font-weight: 600;
@@ -14,10 +14,20 @@
 .secondary-button {
   background-color: white;
   color: #00227a;
-  padding: 10px 12px;
+  padding: 10px 10px;
   border-radius: 5px;
   border: 2px solid #00227a;
   margin: 0 10px;
   font-weight: 600;
   font-size: 14px;
+}
+
+.get-started {
+  background-color: #00227a;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  width: fit-content;
 }
