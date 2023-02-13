@@ -21,3 +21,13 @@
   font-weight: 600;
   font-size: 14px;
 }
+
+.get-started {
+  background-color: #00227a;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  width: fit-content;
+}
