@@ -4,11 +4,15 @@
 }
 
 .welcome-text {
-  width: 30%;
+  width: 40%;
 }
 
+/*main welcome Image*/
 .welcome-img-container {
-  width: 65%;
+  width: 60%;
+  border: 2px double black;
+  box-shadow: 5px 10px #f7ab4a;
+  padding: 1rem;
 }
 
 .container-welcome {
@@ -18,3 +22,19 @@
   width: 80%;
   margin: auto;
 }
+
+/* text style and line spacing*/
+h1 {
+  margin: 0;
+  line-height: 1.5em;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 1.7em;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+/* end of text style and line spacing*/

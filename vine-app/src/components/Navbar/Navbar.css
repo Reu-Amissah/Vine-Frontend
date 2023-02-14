@@ -58,7 +58,7 @@ div.active-link {
   padding-inline: 20px;
 }
 
-span {
+.link-span {
   background-color: #00227a;
   width: 50%;
   height: 4px;
