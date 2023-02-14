@@ -46,7 +46,7 @@ a:hover {
 }
 
 /*---acitve NavBar link style---*/
-a:link#active {
+#active {
   color: #00227a;
   font-weight: 700;
   margin-left: 0;
