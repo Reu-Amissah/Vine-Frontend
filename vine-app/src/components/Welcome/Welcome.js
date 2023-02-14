@@ -10,8 +10,7 @@ const Welcome = () => {
         <div className="welcome-text">
           <h1>
             Ghana’s #1 Basic <br />
-            School with top notch <br />
-            educational Facilities
+            School with top notch educational Facilities
           </h1>
           <p>
             Enroll your children into the hands of well <br />

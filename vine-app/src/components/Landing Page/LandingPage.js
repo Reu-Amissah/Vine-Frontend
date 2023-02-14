@@ -2,6 +2,7 @@ import React from "react";
 import "./LandingPage.css";
 import Navbar from "../Navbar/Navbar";
 import Welcome from "../Welcome/Welcome";
+import Mission from "../Mission/Mission";
 
 function LandingPage() {
   return (
@@ -11,6 +12,9 @@ function LandingPage() {
       </header>
       <section>
         <Welcome></Welcome>
+      </section>
+      <section>
+        <Mission></Mission>
       </section>
       <main>
         <section id="about">
