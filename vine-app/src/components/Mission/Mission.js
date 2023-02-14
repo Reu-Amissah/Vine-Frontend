@@ -3,14 +3,14 @@ import "./Mission.css";
 
 const Mission = () => {
   return (
-    <div>
-      <div>
+    <div className="mission-container">
+      <div className="container-mission">
         <div className="mission-title">
-          <h3>Mission</h3>
+          <h2 className="mission-header">MISSION</h2>
           <span className="mission-span"></span>
         </div>
 
-        <p>
+        <p className="mission-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
           turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
           fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
