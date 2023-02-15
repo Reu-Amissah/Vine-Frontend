@@ -33,7 +33,15 @@ const ContactUs = () => {
 
         <div className="contact-form">
           <div className="contact-form-container">
-            <div className="contact-form">Contact Form</div>
+            <form>
+              <div className="form-header">
+                <h3>Contact Form</h3>
+              </div>
+              <div className="input-fields-container">
+                <div className="input-fields">Input Fields</div>
+                <div className="input-box">Message Box</div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
