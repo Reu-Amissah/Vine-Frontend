@@ -3,6 +3,7 @@ import "./LandingPage.css";
 import Navbar from "../Navbar/Navbar";
 import Welcome from "../Welcome/Welcome";
 import Mission from "../Mission/Mission";
+import Programs from "../Programs/Programs";
 
 function LandingPage() {
   return (
@@ -15,6 +16,9 @@ function LandingPage() {
       </section>
       <section>
         <Mission></Mission>
+      </section>
+      <section>
+        <Programs></Programs>
       </section>
       <main>
         <section id="about">
