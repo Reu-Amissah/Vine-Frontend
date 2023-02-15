@@ -1,0 +1,19 @@
+.contact-us-container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-block: 60px;
+  /* align-items: center; */
+}
+
+.contact-us-header-text {
+  text-align: center;
+}
+
+.contact-details-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 10px;
+}
