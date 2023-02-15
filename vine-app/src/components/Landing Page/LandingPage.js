@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Welcome from "../Welcome/Welcome";
 import Mission from "../Mission/Mission";
 import Programs from "../Programs/Programs";
+import ContactUs from "../ContactUs/ContactUs";
 
 function LandingPage() {
   return (
@@ -11,7 +12,7 @@ function LandingPage() {
       <header>
         <Navbar></Navbar>
       </header>
-      <section>
+      <section className="welcome-section">
         <Welcome></Welcome>
       </section>
       <section>
@@ -20,37 +21,9 @@ function LandingPage() {
       <section>
         <Programs></Programs>
       </section>
-      <main>
-        <section id="about">
-          <h1>About Us</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor,
-            magna id ullamcorper malesuada, urna orci commodo orci, id feugiat
-            risus tellus id magna.
-          </p>
-        </section>
-        <section id="services">
-          <h1>Our Services</h1>
-          <ul>
-            <li>Service 1</li>
-            <li>Service 2</li>
-            <li>Service 3</li>
-          </ul>
-        </section>
-        <section id="contact">
-          <h1>Contact Us</h1>
-          <form>
-            <label>Name:</label>
-            <input type="text" placeholder="Enter your name" />
-            <label>Email:</label>
-            <input type="email" placeholder="Enter your email" />
-            <label>Message:</label>
-            <textarea placeholder="Enter your message"></textarea>
-            <button type="submit">Submit</button>
-          </form>
-        </section>
-      </main>
-      <footer>Copyright &copy;2022</footer>
+      <section className="contact-us-section">
+        <ContactUs></ContactUs>
+      </section>
     </div>
   );
 }

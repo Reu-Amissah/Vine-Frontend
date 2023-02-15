@@ -15,15 +15,24 @@ const Programs = () => {
           />
         </div>
 
-        <div className="programs-text">
-          <h1>
-            Ghana’s #1 Basic <br />
-            School with top notch educational Facilities
-          </h1>
+        <div className="programs-text-container">
+          <div className="programs-title">
+            <h2 className="programs-header">Events</h2>
+            <span className="programs-span"></span>
+          </div>
           <p>
-            Enroll your children into the hands of well <br />
-            trained professional tutors in Ghana
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+            nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+            tellus elit sed risus. Maecenas eget condimentum velit, sit amet
+            feugiat lectus. Class aptent taciti sociosqu ad litora torquent per
+            conubia nostra, per inceptos himenaeos.
           </p>
+          <Button
+            title={"View More"}
+            cName={"view-more"}
+            iconName={"icon-display"}
+          ></Button>
         </div>
       </div>
     </div>
