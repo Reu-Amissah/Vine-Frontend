@@ -32,6 +32,18 @@
   width: fit-content;
 }
 
+.view-more {
+  background-color: #f7ab4a;
+  color: #00227a;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  width: fit-content;
+  box-shadow: 4px 4px #00227a;
+}
+
+/* -> Toggle Icon-view in Button component*/
 .icon-display {
   display: none;
 }

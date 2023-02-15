@@ -11,7 +11,7 @@ function LandingPage() {
       <header>
         <Navbar></Navbar>
       </header>
-      <section>
+      <section className="welcome-section">
         <Welcome></Welcome>
       </section>
       <section>
