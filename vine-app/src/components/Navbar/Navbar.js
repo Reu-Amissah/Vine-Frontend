@@ -27,8 +27,16 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="buttons">
-          <Button title={"Apply Now"} cName={"primary-button"}></Button>
-          <Button title={"Donate"} cName={"secondary-button"}></Button>
+          <Button
+            title={"Apply Now"}
+            cName={"primary-button"}
+            iconName={"icon-display"}
+          ></Button>
+          <Button
+            title={"Donate"}
+            cName={"secondary-button"}
+            iconName={"icon-display"}
+          ></Button>
         </div>
       </div>
     </nav>
