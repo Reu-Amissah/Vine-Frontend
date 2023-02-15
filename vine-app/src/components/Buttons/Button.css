@@ -31,3 +31,7 @@
   font-size: 14px;
   width: fit-content;
 }
+
+.icon-display {
+  display: none;
+}

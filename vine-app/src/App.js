@@ -1,20 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import LandingPage from './components/Landing Page/LandingPage';
-
+import logo from "./logo.svg";
+import "./App.css";
+import LandingPage from "./components/Landing Page/LandingPage";
 
 function App() {
-
-  const header = 
+  const header = (
     <div>
-      <h1>
-        Hello Reujoy!
-      </h1>
+      <h1>Hello Reujoy!</h1>
     </div>
+  );
   const user = {
-    firstname: 'Ekow',
-    lastname: 'Amissah'
-  }
+    firstname: "Ekow",
+    lastname: "Amissah",
+  };
 
   return (
     // <div className="App">
@@ -34,8 +31,7 @@ function App() {
     //   </header>
     // </div>
 
-    <LandingPage>
-    </LandingPage>
+    <LandingPage></LandingPage>
     // <div className='container'>
     //   {header}
     //   {user.firstname + ' ' + user.lastname}
