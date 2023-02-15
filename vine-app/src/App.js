@@ -3,15 +3,15 @@ import "./App.css";
 import LandingPage from "./components/Landing Page/LandingPage";
 
 function App() {
-  const header = (
-    <div>
-      <h1>Hello Reujoy!</h1>
-    </div>
-  );
-  const user = {
-    firstname: "Ekow",
-    lastname: "Amissah",
-  };
+  // const header = (
+  //   <div>
+  //     <h1>Hello Reujoy!</h1>
+  //   </div>
+  // );
+  // const user = {
+  //   firstname: "Ekow",
+  //   lastname: "Amissah",
+  // };
 
   return (
     // <div className="App">
