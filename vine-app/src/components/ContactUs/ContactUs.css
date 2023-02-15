@@ -38,7 +38,7 @@ form {
   border-color: black;
   border-style: solid double double solid;
   width: fit-content;
-  box-shadow: 3px 3px 1px 0px #000000;
+  box-shadow: 2px 2px #000000;
   border-radius: 5px;
 
   padding: 8px 30px;
