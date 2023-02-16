@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactUs.css";
 import ContactDetails from "../ContactDetails/ContactDetails";
+import InputFields from "../Input Fields/InputFields";
 import {
   faPhone,
   faLocation,
