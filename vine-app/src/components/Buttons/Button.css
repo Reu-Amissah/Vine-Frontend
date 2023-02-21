@@ -31,11 +31,11 @@
   font-weight: 600;
   font-size: 14px;
   width: fit-content;
-  animation-duration: 3s;
-  animation-name: slidein2;
+  /* animation-duration: 3s;
+  animation-name: slidein2; */
 }
 
-@keyframes slidein2 {
+/* @keyframes slidein2 {
   from {
     margin-left: 100%;
     width: 400%;
@@ -45,7 +45,7 @@
     margin-left: 0%;
     width: 24%;
   }
-}
+} */
 
 .view-more {
   /* background-color: #f7ab4a; */
