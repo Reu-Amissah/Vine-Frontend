@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ContactUs.css";
 import ContactDetails from "../ContactDetails/ContactDetails";
 // import InputFields from "../Input Fields/InputFields";
@@ -8,7 +8,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
-class ContactUs extends Component() {
+class ContactUs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,8 +23,8 @@ class ContactUs extends Component() {
   }
 
   fetchTask() {
-    fetch("http://127.0.0.1:8000/contact-post/")
-      .then((response) => response.json)
+    fetch("http://127.0.0.1:8000/contacts")
+      .then((response) => response.json())
       .then((data) => console.log("Data", data));
   }
 
