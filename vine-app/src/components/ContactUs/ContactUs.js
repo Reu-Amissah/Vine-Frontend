@@ -23,8 +23,8 @@ class ContactUs extends React.Component {
   }
 
   fetchTask() {
-    fetch("http://127.0.0.1:8000/contact-post/")
-      .then((response) => response.json)
+    fetch("http://127.0.0.1:8000/contacts")
+      .then((response) => response.json())
       .then((data) => console.log("Data", data));
   }
 
