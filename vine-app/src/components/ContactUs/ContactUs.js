@@ -1,11 +1,14 @@
 import React from "react";
 import "./ContactUs.css";
 import ContactDetails from "../ContactDetails/ContactDetails";
-// import InputFields from "../Input Fields/InputFields";
+import InputFields from "../Input Fields/InputFields";
+import MessageBox from "../Input Fields/MessageBox";
+import Button from "../Buttons/Button";
 import {
   faPhone,
   faLocation,
   faEnvelope,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 class ContactUs extends React.Component {
@@ -59,9 +62,25 @@ class ContactUs extends React.Component {
                   <h3>Contact Form</h3>
                 </div>
                 <div className="input-fields-container">
-                  <div className="input-fields">Input Fields</div>
-                  <div className="input-box">Message Box</div>
+                  <div className="input-fields">
+                    <InputFields
+                      iconName={faUser}
+                      placeHolder="Enter your fullname"
+                    ></InputFields>
+                    <InputFields
+                      iconName={faEnvelope}
+                      placeHolder="Enter your email"
+                    ></InputFields>
+                  </div>
+                  <div className="input-box">
+                    <MessageBox></MessageBox>
+                  </div>
                 </div>
+                <Button
+                  title={"Submit"}
+                  cName={"submit-button"}
+                  iconName={"icon-display"}
+                ></Button>
               </form>
             </div>
           </div>
