@@ -8,7 +8,7 @@
   border-radius: 5px;
   margin-top: 10px;
   width: 87%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .text-box {
@@ -17,5 +17,14 @@
   margin-left: 7px;
   outline: none;
   color: #636363;
+  width: 100%;
+}
+
+.msg-box {
+  margin-top: 10px;
+  border: 1px solid #b3b3b3;
+  color: #636363;
+  border-radius: 5px;
+  height: 100%;
   width: 100%;
 }

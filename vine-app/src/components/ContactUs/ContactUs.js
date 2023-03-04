@@ -2,7 +2,8 @@ import React from "react";
 import "./ContactUs.css";
 import ContactDetails from "../ContactDetails/ContactDetails";
 import InputFields from "../Input Fields/InputFields";
-import MessageBox from "../Input Fields/InputFields";
+import MessageBox from "../Input Fields/MessageBox";
+import Button from "../Buttons/Button";
 import {
   faPhone,
   faLocation,
@@ -75,6 +76,11 @@ class ContactUs extends React.Component {
                     <MessageBox></MessageBox>
                   </div>
                 </div>
+                <Button
+                  title={"View More"}
+                  cName={"submit-button"}
+                  iconName={"icon-display"}
+                ></Button>
               </form>
             </div>
           </div>

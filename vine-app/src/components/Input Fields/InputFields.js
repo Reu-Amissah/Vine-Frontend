@@ -25,20 +25,4 @@ const InputFields = ({ iconName, placeHolder }) => {
   );
 };
 
-// const MessageBox = () => {
-//   return (
-//     <div>
-//       <textarea></textarea>
-//     </div>
-//   );
-// };
-
-export function MessageBox() {
-  return (
-    <div>
-      <textarea rows={4}></textarea>
-    </div>
-  );
-}
-
 export default InputFields;
