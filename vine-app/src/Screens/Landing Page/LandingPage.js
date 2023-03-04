@@ -1,10 +1,10 @@
 import React from "react";
 import "./LandingPage.css";
-import Navbar from "../Navbar/Navbar";
-import Welcome from "../Welcome/Welcome";
-import Mission from "../Mission/Mission";
-import Programs from "../Programs/Programs";
-import ContactUs from "../ContactUs/ContactUs";
+import Navbar from "../../components/Navbar/Navbar";
+import Welcome from "../../components/Welcome/Welcome";
+import Mission from "../../components/Mission/Mission";
+import Programs from "../../components/Programs/Programs";
+import ContactUs from "../../components/ContactUs/ContactUs";
 
 class LandingPage extends React.Component {
   render() {

@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import LandingPage from "./components/Landing Page/LandingPage";
+import LandingPage from "../src/Screens/Landing Page/LandingPage";
 
 function App() {
   // const header = (
