@@ -17,6 +17,7 @@ class ContactUs extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
+      contactItems: [],
     };
     this.fetchTask = this.fetchTask.bind(this);
   }
@@ -26,12 +27,19 @@ class ContactUs extends React.Component {
   }
 
   fetchTask() {
-    fetch("http://127.0.0.1:8000/contacts")
+    fetch("http://127.0.0.1:8000/contacts/contact-post")
       .then((response) => response.json())
-      .then((data) => console.log("Data", data));
+      .then((data) =>
+        this.setState({
+          contactItems: data,
+        })
+      );
   }
 
   render() {
+    var contactItems = this.state.contactItems;
+    console.log(contactItems);
+
     return (
       <div className="contact-us-container">
         <div className="container-contact-us">
@@ -81,6 +89,11 @@ class ContactUs extends React.Component {
                   cName={"submit-button"}
                   iconName={"icon-display"}
                 ></Button>
+                {/* <div>
+                  {contactItems.map((contacts) => (
+                    <p>{contacts}</p>
+                  ))}
+                </div> */}
               </form>
             </div>
           </div>

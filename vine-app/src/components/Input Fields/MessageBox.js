@@ -6,10 +6,11 @@ const MessageBox = () => {
     <div>
       <div className="input-header">Message</div>
       <textarea
-        rows={5}
+        rows={3}
         name="message-box"
         type="text"
         className="msg-box"
+        placeholder="Enter message"
       ></textarea>
     </div>
   );
