@@ -22,7 +22,11 @@
 
 .msg-box {
   margin-top: 10px;
+  border: 0;
+
+  padding: 10px;
   border: 1px solid #b3b3b3;
+  background-color: #f9f9f9;
   color: #636363;
   border-radius: 5px;
   height: 100%;
