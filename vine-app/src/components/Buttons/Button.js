@@ -3,9 +3,9 @@ import "./Button.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const Button = ({ title, cName, iconName }) => {
+const Button = ({ title, cName, iconName, type }) => {
   return (
-    <div className={cName}>
+    <div className={cName} type={type}>
       {title}
       <FontAwesomeIcon
         icon={faArrowRight}

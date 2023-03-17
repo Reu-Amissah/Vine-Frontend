@@ -83,6 +83,7 @@ class ContactUs extends React.Component {
                   </div>
                 </div>
                 <Button
+                  type={"submit"}
                   title={"Submit"}
                   cName={"submit-button"}
                   iconName={"icon-display"}
