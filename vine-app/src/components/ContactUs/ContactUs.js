@@ -12,30 +12,45 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 class ContactUs extends React.Component {
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
+
   constructor(props) {
     super(props);
     this.state = {
-      error: null,
-      isLoaded: false,
-      contactItems: [],
+      name: "",
+      email: "",
+      message: "",
     };
-    this.fetchTask = this.fetchTask.bind(this);
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.fetchTask = this.fetchTask.bind(this);
   }
 
-  componentDidMount() {
-    this.fetchTask();
+  handleChange(e, name) {
+    this.setState({ [name]: e.target.value });
   }
 
-  fetchTask() {
-    fetch("http://127.0.0.1:8000/contacts")
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({ contactItems: data });
-      });
+  handleSubmit(e) {
+    console.log(this.state.name, this.state.email, this.state.message);
+    e.preventDefault();
   }
+  // componentDidMount() {
+  //   this.fetchTask();
+  // }
+
+  // fetchTask() {
+  //   fetch("http://127.0.0.1:8000/contacts")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       this.setState({ contactItems: data });
+  //     });
+  // }
 
   render() {
-    var contactItems = this.state.contactItems;
+    // var contactItems = this.state.contactItems;
     // var { contactItems } = this.state;
 
     return (
@@ -63,7 +78,7 @@ class ContactUs extends React.Component {
 
           <div className="contact-form">
             <div className="contact-form-container">
-              <form>
+              <form onSubmit={this.handleSubmit}>
                 <div className="form-header">
                   <h3>Contact Form</h3>
                 </div>
@@ -72,14 +87,21 @@ class ContactUs extends React.Component {
                     <InputFields
                       iconName={faUser}
                       placeHolder="Enter your fullname"
+                      value={this.state.name}
+                      onChange={(e) => this.handleChange(e, "name")}
                     ></InputFields>
                     <InputFields
                       iconName={faEnvelope}
                       placeHolder="Enter your email"
+                      value={this.state.email}
+                      onChange={(e) => this.handleChange(e, "email")}
                     ></InputFields>
                   </div>
                   <div className="input-box">
-                    <MessageBox></MessageBox>
+                    <MessageBox
+                      value={this.state.message}
+                      onChange={(e) => this.handleChange(e, "message")}
+                    ></MessageBox>
                   </div>
                 </div>
                 <Button
@@ -89,9 +111,9 @@ class ContactUs extends React.Component {
                   iconName={"icon-display"}
                 ></Button>
                 <div>
-                  {contactItems.map((contacts) => (
+                  {/* {contactItems.map((contacts) => (
                     <p key={contacts.name}>{contacts.name}</p>
-                  ))}
+                  ))} */}
                 </div>
               </form>
             </div>
