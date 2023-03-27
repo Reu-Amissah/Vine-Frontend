@@ -34,13 +34,35 @@ class ContactUs extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log(this.state.name, this.state.email, this.state.message);
+    // console.log(this.state.name, this.state.email, this.state.message);
     e.preventDefault();
+    const contactDetails = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message,
+    };
+    this.sendContactMessage(contactDetails);
   }
   // componentDidMount() {
   //   this.fetchTask();
   // }
 
+  sendContactMessage(data) {
+    fetch("http://127.0.0.1:8000/contact-post/", {
+      method: "POST", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
   // fetchTask() {
   //   fetch("http://127.0.0.1:8000/contacts")
   //     .then((response) => response.json())
