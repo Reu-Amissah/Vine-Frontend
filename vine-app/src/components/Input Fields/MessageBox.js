@@ -1,7 +1,7 @@
 import React from "react";
 import "./InputFields.css";
 
-const MessageBox = () => {
+const MessageBox = ({ value, onChange }) => {
   return (
     <div>
       <div className="input-header">Message</div>
@@ -11,6 +11,8 @@ const MessageBox = () => {
         type="text"
         className="msg-box"
         placeholder="Enter message"
+        value={value}
+        onChange={onChange}
       ></textarea>
     </div>
   );

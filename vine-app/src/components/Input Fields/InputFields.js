@@ -2,7 +2,7 @@ import React from "react";
 import "./InputFields.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const InputFields = ({ iconName, placeHolder }) => {
+const InputFields = ({ iconName, placeHolder, value, onChange }) => {
   return (
     <div>
       <div className="input-header">Name</div>
@@ -19,6 +19,8 @@ const InputFields = ({ iconName, placeHolder }) => {
           name="Name"
           className="text-box"
           placeholder={placeHolder}
+          value={value}
+          onChange={onChange}
         />
       </div>
     </div>
