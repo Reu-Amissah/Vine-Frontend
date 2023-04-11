@@ -1,0 +1,44 @@
+.mission-container {
+  background-color: #fff0dc;
+}
+
+.container-mission {
+  width: 95%;
+  margin: auto;
+  padding-block: 15px;
+}
+
+/* -> Title text styling plus span styling*/
+.mission-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-span {
+  background-color: #efb343;
+  width: 70px;
+  height: 4px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mission-header {
+  letter-spacing: 4px;
+  color: #00227a;
+  margin: 0;
+}
+/* `` End Title text styling plus span styling*/
+
+/* -> Mission Description text styling*/
+.mission-description {
+  line-height: 1.7em;
+  font-weight: 600;
+  font-size: 14px;
+
+  border: 1px solid;
+  box-shadow: 2px 2px rgb(170, 170, 170);
+  padding: 1rem;
+}
+/* ``Mission Description text styling*/
