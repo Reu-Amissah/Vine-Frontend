@@ -52,6 +52,12 @@ a:hover {
   margin-left: 0;
 }
 
+/* .active-link {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+} */
+
 div.active-link {
   display: flex;
   flex-direction: column;
