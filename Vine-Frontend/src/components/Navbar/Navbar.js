@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Buttons/Button";
 import "./Navbar.css";
+// import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -16,6 +17,15 @@ const Navbar = () => {
             </li>
             <span className="link-span"></span>
           </div>
+          {/* <li>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "active-link" : "not-active"
+              }
+            >
+              try
+            </NavLink>
+          </li> */}
           <li className="not-active">
             <a href="#services">About Us</a>
           </li>
